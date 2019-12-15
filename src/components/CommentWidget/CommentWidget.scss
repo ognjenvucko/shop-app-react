@@ -1,0 +1,24 @@
+.comment-widget {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 0px 20px 10px;
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.comment-widget__comment {
+  margin: 7px 0px 10px;
+  font-size: 1.6em;
+  background: #f2f2f2;
+  padding: 7px;
+  i {
+    color: #9a9a9a;
+  }
+}
+
+.comment-widget__title {
+  font-size: 1.8em;
+}

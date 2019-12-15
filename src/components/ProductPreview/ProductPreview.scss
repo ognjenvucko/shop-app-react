@@ -1,0 +1,122 @@
+@import '../../sass/variables.scss';
+
+.product-preview {
+  display: flex;
+  margin: 30px auto;
+  background-color: $white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-width: 880px;
+  min-width: 650px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  @media only screen and (max-width: 650px) {
+    max-width: 650px;
+    min-width: 300px;
+  }
+}
+
+.product-preview__main {
+  margin: 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.product-preview__img {
+  min-width: 300px;
+  min-height: 420px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  @media only screen and (max-width: 650px) {
+    margin-right: 0px;
+  }
+}
+.product-preview__details {
+  display: flex;
+  max-width: 450px;
+  flex-direction: column;
+}
+
+.product-preview__details-title {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.product-preview__details-description {
+  color: $grey-dark;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.product-preview__details-specs {
+  color: $grey-dark;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.product-preview__specs-label {
+  margin: 5px 0px;
+  font-weight: bold;
+  color: $green-dark;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.product-preview__specs-text {
+  margin: 0;
+  height: auto;
+  max-height: 600px;
+  transform: scaleY(1);
+  transform-origin: left top;
+  transition: all 0.5s ease;
+  &--collapsed {
+    max-height: 0px;
+    transform: scaleY(0);
+    overflow: hidden;
+  }
+}
+
+.product-preview__details-price {
+  font-size: 1.6em;
+  background-color: #999;
+  display: inline-block;
+  color: #fff;
+  padding: 5px;
+}
+
+.product-preview__gallery {
+  display: flex;
+  padding: 5px 20px;
+  font-size: 1.6em;
+  flex-direction: row;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.product-preview__comments {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 0px 0px 10px;
+}
+
+.product-preview__comments-title {
+  font-size: 1.8em;
+}
+
+.product-preview__not-found {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 80vh;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
