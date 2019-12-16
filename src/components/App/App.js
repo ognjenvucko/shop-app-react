@@ -6,7 +6,7 @@ import ProductPreview from "../ProductPreview/ProductPreview";
 import "./App.scss";
 import Header from "../Header/Header";
 
-function App({ history }) {
+function App() {
   return (
     <Router>
       <Header />

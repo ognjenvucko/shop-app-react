@@ -19,7 +19,7 @@ const ProductList = function() {
             id={id}
             thumb={getProductThumbnail(images)}
             title={title}
-            price={price}
+            price={`$${price}`}
           />
         );
       })}

@@ -8,7 +8,7 @@ import Loading from "../Loading/Loading";
 import GalleryImage from "../GalleryImage/GalleryImage";
 import CommentWidget from "../CommentWidget/CommentWidget";
 
-const ProductPreview = function({ comments, onComment }) {
+const ProductPreview = function() {
   const [selectedImage, setSelectedImage] = useState();
   const [isSpecificationCollapsed, setIsSpecificationCollapsed] = useState(
     true
